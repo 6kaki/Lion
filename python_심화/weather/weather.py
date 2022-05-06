@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 city = 'Seoul'
-apikey = '6f5b0c78c06671837ff7ba4d369fe932'
+apikey = '#'
 lang='kr'
 units='metric'
 
