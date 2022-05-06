@@ -48,7 +48,7 @@ API 링크 만들기
 """
 #------------------------------------------------------#
 city = 'Seoul'
-apikey = '6f5b0c78c06671837ff7ba4d369fe932'
+apikey = '#'
 #parameter 조건 
 #city와 APIkey
 api=f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apikey}'
