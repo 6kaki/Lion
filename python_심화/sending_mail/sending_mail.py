@@ -91,7 +91,7 @@ smtp = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT)
 2. SMTP 메일 서버에 로그인
     - 객체를 활용해서 로그인
 """
-smtp.login('juniyook@likelion.org','@ldrmfdl66')
+smtp.login('###','###')
 # (ID, password)
 # (235, b'2.7.0 Accepted')
 # If 패스워드가 틀리면 : 오류 출력
@@ -137,8 +137,8 @@ MIME.Header
     - To : 메일 받는 사람
 """
 message['Subject'] = "똑똑 메일 왔습니다."
-message['From'] = "juniyook@likelion.org"
-message['To'] = "poijnm66@naver.com"
+message['From'] = "###"
+message['To'] = "###"
 
 smtp.send_message(message)
 #보내고 싶은 이메일

@@ -18,8 +18,8 @@ SMTP_PORT = 465
 message = EmailMessage()
 message.set_content("이야 신기하다.")
 message['Subject'] = "메일 제목"
-message['From'] = "juniyook@likelion.org"
-message['To'] = "poijnm66@naver.com"
+message['From'] = "###"
+message['To'] = "###"
 
 #파일 읽어오기
 #img = open('codelion.png','rb')
@@ -69,6 +69,6 @@ message.add_attachment(image_file, maintype='image',subtype=image_type,filename=
 # 확장자가 변경되어도 알아서 확장자를 파악해서 변경해주는 작업
 
 smtp = smtplib.SMTP_SSL(SMTP_SERVER,SMTP_PORT)
-smtp.login("juniyook@likelion.org", "@ldrmfdl66")
+smtp.login("###", "###")
 smtp.send_message(message)
 smtp.quit()

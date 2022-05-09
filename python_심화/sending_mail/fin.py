@@ -49,7 +49,7 @@ image_type = imghdr.what('codelion',image_file)
 message.add_attachment(image_file,maintype="image",subtype=image_type,filename='codelion.png')
 
 smtp = smtplib.SMTP_SSL(SMTP_SERVER,SMTP_PORT)
-smtp.login("juniyook@likelion.org","@ldrmfdl66")
+smtp.login("#####","####")
 
 sendEmail(email_dict)
 

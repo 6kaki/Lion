@@ -34,7 +34,7 @@ SMTP_PORT = 465
 # print(re.match(reg, message['To'] ))
 # print(re.match(reg, message['From'] ))
 #(정규표현식, 정규표현식을 적용하고 싶은 문장)
-#<re.Match object; span=(0, 18), match='poijnm66@naver.com'>
+#<re.Match object; span=(0, 18), match='###'>
 # 정규표현식에 부합하지 않을경우 : None
 
 def sendEmail(addr):
@@ -54,13 +54,13 @@ img_type = imghdr.what('codelion',image_file)
 
 message = EmailMessage()
 message.set_content("와 신기하다.")
-message['To'] = 'poijnm66@naver.com'
-message['From'] = 'juniyook@likelion.org'
+message['To'] = '###'
+message['From'] = '###'
 message['Subject'] = '제목입니다.'
 message.add_attachment(image_file,maintype='image',subtype='img_type',filename='codelion.png')
 
 smtp = smtplib.SMTP_SSL(SMTP_SERVER,SMTP_PORT)
-smtp.login("juniyook@likelion.org", "@ldrmfdl66")
+smtp.login("###", "###")
 
 sendEmail(message['To'])
 
